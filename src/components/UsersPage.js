@@ -55,7 +55,7 @@ function UsersPage() {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.map(user => (
+                        {data?.map(user => (
                             <tr key={user.id}>
                                 <td className="px-2 py-2">{user.id}</td>
                                 <td className="px-2 py-2">{user.name}</td>

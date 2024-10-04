@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-// import * as serviceWorkerRegistration from './serviceWorkerRegistration';   we can not register or use 2 service worker at a time 
+import { registerServiceWorker } from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import swDev from './swDev';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,5 +13,5 @@ root.render(
 );
 
 reportWebVitals();
+registerServiceWorker();
 
-swDev();
